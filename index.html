@@ -11,28 +11,77 @@
 
             // $("h1:first").css("border","5px solid green");
 
-            // //replaicing content
+            // // replaicing content
             // var newText = $("<p>");
             // newText.append("<h1>i replaced your somthing :)</h1>");
             // $("#test-text").html(newText);
 
-            // //handiling events
-            // $("#textBox").on("click", whenMouseIsClicked);
-            // $("#textBox").on("mouseleave", whenMouseLeaves);
+            // // handiling events
+            // $("#text-box").on("click", whenMouseIsClicked);
+            // $("#text-box").on("mouseleave", whenMouseLeaves);
             // function whenMouseIsClicked(){
-            //     $("#textBox").html("<h1>you clicked me</h1>");
+            //     $("#text-box").html("<h1>you clicked me</h1>");
             // }
             // function whenMouseLeaves(){
-            //     $("#textBox").html("<h1>dont leave me pliz</h1>");
+            //     $("#text-box").html("<h1>dont leave me pliz</h1>");
             // }
+
+            // // hide / show effects
+            // $("#show").on("click", function() {
+            //     $("#text-box").show();
+            // });
+            // $("#hide").on("click", function() {
+            //     $("#text-box").hide();
+            // });
+
+            // // hover effects
+            // $(".text-copy").hover(highlightCopy);
+            // function highlightCopy(){
+            //     $(this).toggleClass("highlight");
+            // }
+
+            // // Fading
+            // $("#fade-in").on("click", function(){
+            //     $("#text-box").fadeIn(1000, function(){
+            //         // alert("im done fading it")
+            //     });
+            // });
+            // $("#fade-out").on("click", function(){
+            //     $("#text-box").fadeOut("fast", function(){
+            //         // alert("im done fading out")
+            //     });
+            // });
+
+            // // Slide
+            // $("#slide-up").click(function(){
+            //     $("#text-box").slideUp("1000", "linear");
+            // });
+            // $("#slide-down").click(function(){
+            //     $("#text-box").slideDown("fast", "linear");
+            // });
+            // $("#slide-togle").click(function(){
+            //     $("#text-box").slideToggle("fast", function(){
+            //         // alert("Done");
+            //     });
+
+            // });
+            // Toggle
+            $("toggleMe").click(function(){
+                // 
+            });
         });
     </script>
     <style>
-        #textBox{
-            width: 250px;
+        #text-box{
+            /* width: 250px;
             height: 150px;
             border: 5px solid black;
-            background-color: aliceblue;
+            background-color: aliceblue; */
+            /* display: none; */
+            
+        }
+        .highlight{
+            background-color: red;
         }
     </style>
 </head>
@@ -43,8 +92,22 @@
     <!-- <div id="test-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam et, maiores iusto laudantium provident sequi natus quod nemo eius accusamus deserunt officiis ratione facere reiciendis illo consectetur voluptatem eligendi illum?
     </div> -->
-    <div id="textBox">
+    <!-- <div id="text-box">
         a
+    </div> -->
+    <!-- <a href="#" id="show">click to show</a> | 
+    <a href="#" id="hide">click to hide</a> -->
+    <!-- <a href="#" id="fade-in">click to show</a> | 
+    <a href="#" id="fade-out">click to hide</a>
+    <div id="text-box">
+        <p class="text-copy">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, voluptatum obcaecati! Dolorum, minima enim, cumque, minus necessitatibus iusto molestiae id nobis vitae error fugit libero assumenda corrupti nulla temporibus qui!</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam harum accusantium ipsam quo nostrum, aliquid quos id nihil saepe, distinctio ipsa, labore rerum? Esse facere amet vero inventore quas?
+    </div> -->
+    <a href="#" id="slide-up">click to slide-up</a> | 
+    <a href="#" id="slide-down">click to slide-down</a> | 
+    <a href="#" id="slide-togle">click to slide-togle</a>
+    <div id="text-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam harum accusantium ipsam quo nostrum, aliquid quos id nihil saepe, distinctio ipsa, labore rerum? Esse facere amet vero inventore quas?
     </div>
 
 </body>
