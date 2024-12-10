@@ -100,13 +100,41 @@
             // $("div > p.fourth-para").css("border", "5px solid blue");
             // $("#box + ul").css("border", "5px solid blue");
             
-            // Creating content
-            // 1:27:47
+            // // Creating content
+            // // 1:27:47
+            // $("p:first-child").css("border", "5px solid red");
+            // $("p:last-of-type").css("border", "5px solid green");
+            // $("p:contains('cock')").css("border", "5px solid pink");
+            // // $("p:parent").css("border", "5px dotted blue");
+            // $("p:nth-child(3)").css("border", "5px dotted blue");
+            // // 1:32:17
+            // $("#create-text").click(function(){
+            //     $("#container p:last").text("Replaced and created this text");
+            // });
+            // $("#create-variable").click(function(){
+            //     var newText = $('#container p:first');
+            //     $("#container p:last").html(newText);
+            // });
+
+            // Inserting content
+            // 1:36:30
+            // $("#append").click(function(){
+            //     $("p:first").append(" im a cancer tumor with teath and hair");
+            // });
+            // $("#prepend").click(function(){
+            //     $("p:first").prepend("im a parasitic twin ");
+            // });
+
+            // Modifying cunt-ent (*content)
+            // 1:41:52
+            // $("#container p:first").wrap("<div class='colorBox'>");
+            // $("#container p:last").empty();
+            $("<div>Cuntainer</div>").replaceAll("#container");
 
         });
         </script>
     <style>
-        #text-box{
+        /* #text-box{ */
             /* width: 250px; */
             /* height: 150px; */
             /* border: 5px solid black; */
@@ -114,10 +142,13 @@
             /* position: absolute; */
             /* margin-top: 20px; */
             /* display: none; */
-            
-        }
-        .highlight{
+            /* border: 1px dotted; */
+        /* } */
+        /* .highlight{
             background-color: red;
+        } */
+        .colorBox{
+            color: #00D8FF;
         }
         </style>
 </head>
@@ -183,7 +214,8 @@
 
     <!-- // Advanced Selectors -->
     <!-- // Creating content -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum in ipsum. Labore fuga obcaecati voluptatum nisi. Temporibus minima ducimus ullam at sint quasi cum animi voluptate, facilis illo odit.</p>
+    <!-- // 1:27:47 -->
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum in ipsum. Labore fuga obcaecati voluptatum nisi. Temporibus minima ducimus ullam at sint quasi cum animi voluptate, facilis illo odit.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum in ipsum. Labore fuga obcaecati voluptatum nisi. Temporibus minima ducimus ullam at sint quasi cum animi voluptate, facilis illo odit.</p>
     
     <div>
@@ -202,7 +234,7 @@
     </ul>
     <div id="box">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quaerat delectus ipsum tempore, non eos iste in odio quam adipisci fugiat. Obcaecati dolorem ad itaque modi fuga consectetur minima?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quaerat delectus ipsum tempore, non eos iste in odio quam adipisci fugiat. Obcaecati dolorem ad itaque modi fuga consectetur minima?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quaerat delectus ipsum tempore, non eos iste in odio quam adipisci fugiat. Obcaecati cock dolorem ad itaque modi fuga consectetur minima?</p>
         <p class="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quaerat delectus ipsum tempore, non eos iste in odio quam adipisci fugiat. Obcaecati dolorem ad itaque modi fuga consectetur minima?</p>
     </div>
     <ul>
@@ -211,9 +243,33 @@
         <li><a href="">home</a></li>
         <li><a href="">home</a></li>
         <li><a href="">home</a></li>
-    </ul>
-
-
-
+    </ul> -->
+    <!-- // 1:32:17 -->
+    <!-- <button id="create">Create</button>
+    <button id="create-text">Create-text</button>
+    <button id="create-variable">Create-variable</button>
+    <div id="container">
+        <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quas? Quia minus quasi cumque voluptatum doloribus fugit sit deserunt illum perspiciatis? Iusto sint ea totam? Quae nulla nemo ullam dolores?</p>
+        <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quas? Quia minus quasi cumque voluptatum doloribus fugit sit deserunt illum perspiciatis? Iusto sint ea totam? Quae nulla nemo ullam dolores?</p>
+        <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quas? Quia minus quasi cumque voluptatum doloribus fugit sit deserunt illum perspiciatis? Iusto sint ea totam? Quae nulla nemo ullam dolores?</p>
+        <p>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quas? Quia minus quasi cumque voluptatum doloribus fugit sit deserunt illum perspiciatis? Iusto sint ea totam? Quae nulla nemo ullam dolores?</p>
+        <p>5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quas? Quia minus quasi cumque voluptatum doloribus fugit sit deserunt illum perspiciatis? Iusto sint ea totam? Quae nulla nemo ullam dolores?</p>
+        <p>6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quas? Quia minus quasi cumque voluptatum doloribus fugit sit deserunt illum perspiciatis? Iusto sint ea totam? Quae nulla nemo ullam dolores?</p>
+    </div> -->
+    
+    <!-- 1:36:30 -->
+    <!-- <button id="append">Append</button>
+    <button id="prepend">Preppend</button>
+    <div id="container">
+        <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quas? Quia minus quasi cumque voluptatum doloribus fugit sit deserunt illum perspiciatis? Iusto sint ea totam? Quae nulla nemo ullam dolores?</p>
+        <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, quas? Quia minus quasi cumque voluptatum doloribus fugit sit deserunt illum perspiciatis? Iusto sint ea totam? Quae nulla nemo ullam dolores?</p>
+    </div> -->
+    
+    <!-- 1:41:52 -->
+    <div id="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi est voluptatem eum pariatur dolore soluta quam. Amet vitae quibusdam nihil necessitatibus dolores quod, provident perferendis maxime beatae sapiente iure quae?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi est voluptatem eum pariatur dolore soluta quam. Amet vitae quibusdam nihil necessitatibus dolores quod, provident perferendis maxime beatae sapiente iure quae?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi est voluptatem eum pariatur dolore soluta quam. Amet vitae quibusdam nihil necessitatibus dolores quod, provident perferendis maxime beatae sapiente iure quae?</p>
+    </div>
 </body>
 </html>
