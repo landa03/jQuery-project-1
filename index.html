@@ -129,8 +129,24 @@
             // 1:41:52
             // $("#container p:first").wrap("<div class='colorBox'>");
             // $("#container p:last").empty();
-            $("<div>Cuntainer</div>").replaceAll("#container");
+            // $("<div>Cuntainer</div>").replaceAll("#container");
+            // $("#container").replaceWith("<div>Cuntainer replace with</div>");
 
+            // Modifying CSS
+            // 1:47:45
+            $("#add-class").click(function(){
+                $("p:first").addClass('color');
+            });
+            $("#remove-class").click(function(){
+                $("p:first").removeClass('color');
+            });
+            $("#toggle-class").click(function(){
+                $("p:first").toggleClass('highlight');
+            });
+            $("#increase-class").click(function(){
+                $("p:first").css("font-size", "+=2px");
+            });
+            
         });
         </script>
     <style>
@@ -144,13 +160,17 @@
             /* display: none; */
             /* border: 1px dotted; */
         /* } */
-        /* .highlight{
+        .highlight{
             background-color: red;
+        }
+        /* .colorBox{
+            color: #00D8FF;
         } */
-        .colorBox{
+        .color{
             color: #00D8FF;
         }
-        </style>
+        
+    </style>
 </head>
 <body>
     <!-- <h1>i love jarjarQuery 1</h1>
@@ -266,10 +286,23 @@
     </div> -->
     
     <!-- 1:41:52 -->
+    <!-- <div id="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi est voluptatem eum pariatur dolore soluta quam. Amet vitae quibusdam nihil necessitatibus dolores quod, provident perferendis maxime beatae sapiente iure quae?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi est voluptatem eum pariatur dolore soluta quam. Amet vitae quibusdam nihil necessitatibus dolores quod, provident perferendis maxime beatae sapiente iure quae?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi est voluptatem eum pariatur dolore soluta quam. Amet vitae quibusdam nihil necessitatibus dolores quod, provident perferendis maxime beatae sapiente iure quae?</p>
+    </div> -->
+    
+    <!-- 1:47:45 -->
+    <button id="add-class">Add class</button>
+    <button id="remove-class">Remove class</button>
+    <button id="toggle-class">Toggle class</button>
+    <button id="increase-class">Increase class</button>
+
     <div id="container">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi est voluptatem eum pariatur dolore soluta quam. Amet vitae quibusdam nihil necessitatibus dolores quod, provident perferendis maxime beatae sapiente iure quae?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi est voluptatem eum pariatur dolore soluta quam. Amet vitae quibusdam nihil necessitatibus dolores quod, provident perferendis maxime beatae sapiente iure quae?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi est voluptatem eum pariatur dolore soluta quam. Amet vitae quibusdam nihil necessitatibus dolores quod, provident perferendis maxime beatae sapiente iure quae?</p>
+        <p>1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ullam aspernatur aliquam consequuntur sint velit dolores voluptate maiores eos distinctio doloremque nam minima mollitia ex aperiam, repellat odit? Enim, perferendis?</p>
+        <p>2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ullam aspernatur aliquam consequuntur sint velit dolores voluptate maiores eos distinctio doloremque nam minima mollitia ex aperiam, repellat odit? Enim, perferendis?</p>
+        <p>3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ullam aspernatur aliquam consequuntur sint velit dolores voluptate maiores eos distinctio doloremque nam minima mollitia ex aperiam, repellat odit? Enim, perferendis?</p>
     </div>
+
 </body>
 </html>
